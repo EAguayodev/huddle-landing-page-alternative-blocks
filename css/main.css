@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open sans', sans-serif;
+    margin: 0;
+}
+
+h1,
+h2 {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 1.75rem;
+}
+
+p {
+    color: hsl(208, 11%, 55%);
+    width: 28rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+.header-img {
+    margin-left: 20%;
+
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 0 20px;
+    width: 1000px;
+}
+
+.center {
+    text-align: center;
+    width: 50%;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex>div,
+.flex>ul {
+    flex: 1;
+}
+
+.align-start {
+    display: flex;
+}
+
+header {
+    background: hsl(193, 100%, 96%);
+    background-image: url('images/bg-hero-desktop.svg');
+    background-size: cover;
+    background-position: center center;
+    padding: 40px 0;
+}
+
+.btn {
+    border: none;
+    border-radius: 50px;
+    background: #fff;
+    box-shadow: 0, 0, 10px rgb(0, 0, 0, 0.15);
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 15px 60px;
+}
+
+.btn-primary {
+    background-color: hsl(322, 100%, 66%);
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #FF9ADB;
+}
+
+.btn-secondary:hover {
+    color: #808E9A;
+    ;
+}
+
+nav {
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.box {
+    background: #fff;
+    border: 3px solid rgb(240, 235, 235);
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.15);
+    margin: 40px 0;
+    padding: 60px;
+}
+
+.box img {
+    width: 80%;
+}
+
+.small-box {
+    background-color: #ffffff;
+    border: 3px solid rgb(240, 235, 235);
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.15);
+    margin: 40px 0;
+    padding: 60px;
+    width: 50rem;
+}
+
+.btn-primary .btn-big {
+    background: hsl(322, 100%, 66%);
+    color: #fff;
+}
+
+footer {
+    background: hsl(192, 100%, 9%);
+    color: #fff;
+    padding: 180px 0 60px;
+    position: relative;
+    margin-top: -140px;
+    z-index: -1;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer ul li {
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+footer .circle {
+    border: 1px solid #fff;
+    border-radius: 50%;
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    height: 40px;
+    width: 40px;
+    text-decoration: none;
+}
+
+footer .social-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon {
+    margin-right: 10px;
+}
+
+footer p {
+    text-align: right;
+}
+
+/***************** MOBILE SCREEN SECTION ********************************/
+
+
+@media (max-width: 48rem) {
+    body {
+        text-align: center;
+    }
+
+    header {
+        background-image: url('images/bg-hero-mobile.svg');
+        background-size: cover;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        width: 17.5rem;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+
+    .btn-secondary {
+        padding: 10px 0;
+        width: 140px;
+    }
+
+    .header-img {
+        margin-top: 30px;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    nav.flex {
+        flex-direction: row;
+    }
+
+    .flex {
+        flex-direction: column;
+    }
+
+    p {
+        width: 16rem;
+    }
+
+    .box-reverse-mobile {
+        flex-direction: column-reverse;
+    }
+
+    .small-box {
+        position: relative;
+        right: 6rem;
+        width: 22rem;
+    }
+
+    .btn-big {
+        margin: 1rem 0 0 0rem;
+        width: 250px;
+        height: 60px;
+    }
+
+    footer .social-media {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    footer ul {
+        padding: 0;
+        width: 100%;
+    }
+
+    footer p {
+        text-align: center;
+    }
+}
